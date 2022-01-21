@@ -1,5 +1,12 @@
 <html>
 <head>
+    <style>
+        div.result {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+        }
+    </style>
 </head>
 <body>
     Action: <select name="operation" id="operation">
@@ -13,10 +20,10 @@
         <input type="submit" value="Perform" />
     </form>
     <iframe name="myIframe" width="390" height="400" frameBorder="1"></iframe><br />
-
-    <h3>Received data from iFrame:</h3>
-    <p id="result">Nothing so far.</p>
-
+    <div class="result">
+        <h3>Received data from iFrame:</h3>
+        <p id="result">Nothing so far.</p>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

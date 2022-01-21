@@ -17,6 +17,7 @@ operation.addEventListener("change", (event) => {
         data.name = "creq";
         data.placeholder = "challengeRequest";
     }
+    receivedMessage.innerHTML = "Nothing so far.";
 });
 
 function submitForm() {
