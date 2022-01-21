@@ -2,7 +2,7 @@ const formUrl = document.querySelector('#threeDSMethodURL');
 const receivedMessage = document.querySelector('#result');
 
 window.addEventListener("message", (event) => {
-    receivedMessage.innerHTML = "Worked";
+    receivedMessage.innerHTML = event.data;
     console.log(event.data)
 }, false);
 
