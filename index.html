@@ -2,12 +2,17 @@
 <head>
 </head>
 <body>
+    <select name="operation" id="operation">
+        <option value="threeDSMethodData">threeDSMethod</option>
+        <option value="creq">challengeRequest</option>
+    </select> <br />
+
     <form action="" method="post" target="myIframe" id="form" onsubmit="submitForm()">
-    <input type="text" id="threeDSMethodURL" placeholder="threeDSMethodURL"/><br />
-    <textarea name="threeDSMethodData" placeholder="threeDSMethodData"></textarea><br />
-    <input type="submit" value="Perform" />
+        <input type="text" id="threeDSMethodURL" placeholder="threeDSMethodURL" /><br />
+        <textarea name="threeDSMethodData" id="data" placeholder="threeDSMethodData"></textarea><br />
+        <input type="submit" value="Perform" />
     </form>
-    <iframe name ="myIframe" width="300" height="300" frameBorder="1"></iframe><br />
+    <iframe name="myIframe" width="400" height="600" frameBorder="1"></iframe><br />
 
     <h3>Received data from iFrame:</h3>
     <p id="result">Nothing so far.</p>
