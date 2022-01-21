@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+    <form action="" method="post" target="myIframe" id="form" onsubmit="submitForm()">
+    <input type="text" id="threeDSMethodURL" placeholder="threeDSMethodURL"/><br />
+    <textarea name="threeDSMethodData" placeholder="threeDSMethodData"></textarea><br />
+    <input type="submit" value="Perform" />
+    </form>
+    <iframe name ="myIframe" width="300" height="300" frameBorder="1"></iframe><br />
+
+    <h3>Received data from iFrame:</h3>
+    <p id="result">Nothing so far.</p>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
