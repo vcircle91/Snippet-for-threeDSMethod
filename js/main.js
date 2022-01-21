@@ -3,7 +3,7 @@ const receivedMessage = document.querySelector('#result');
 
 window.addEventListener("message", (event) => {
     receivedMessage.innerHTML = "Worked";
-    console.log("Worked" + event)
+    console.log(event.data)
 }, false);
 
 function submitForm() {
