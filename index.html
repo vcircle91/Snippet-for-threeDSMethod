@@ -2,14 +2,14 @@
 <head>
 </head>
 <body>
-    <select name="operation" id="operation">
+    Action: <select name="operation" id="operation">
         <option value="threeDSMethodData">threeDSMethod</option>
         <option value="creq">challengeRequest</option>
     </select> <br />
 
     <form action="" method="post" target="myIframe" id="form" onsubmit="submitForm()">
-        <input type="text" id="threeDSMethodURL" placeholder="threeDSMethodURL" /><br />
-        <textarea name="threeDSMethodData" id="data" placeholder="threeDSMethodData"></textarea><br />
+        <input type="text" size="132" id="threeDSMethodURL" placeholder="threeDSMethodURL" /><br />
+        <textarea name="threeDSMethodData" cols="100" id="data" placeholder="threeDSMethodData"></textarea><br />
         <input type="submit" value="Perform" />
     </form>
     <iframe name="myIframe" width="390" height="400" frameBorder="1"></iframe><br />
