@@ -2,7 +2,8 @@ const formUrl = document.querySelector('#threeDSMethodURL');
 const receivedMessage = document.querySelector('#result');
 
 window.addEventListener("message", (event) => {
-    receivedMessage.innerHTML = message;
+    receivedMessage.innerHTML = "Worked";
+    console.log("Worked" + event)
 }, false);
 
 function submitForm() {
